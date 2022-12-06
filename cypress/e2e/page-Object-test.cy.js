@@ -9,8 +9,12 @@ it('login',()=>{
     log.len()
     log.toggle()
     log.explict1()
-})
-it("login",()=>{
+    log.checked()
+    log.line_through()
+   log.complete()
+   log.overall()
+}) 
+/*it("login",()=>{
     const log = new todo()
     log.visit()
     log.type("object")
@@ -18,5 +22,5 @@ it("login",()=>{
     log.len()
     log.toggle()
     log.explict1()
-})
+})*/
 })

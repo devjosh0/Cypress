@@ -20,4 +20,17 @@
         expect('.new-todo').to.be.equal('.new-todo')
        
     }
+    checked(){
+        cy.get('.completed > .view > .toggle').should('be.checked')
+    }
+    line_through(){
+        cy.get('.completed > .view > label').should('have.css','text-decoration-line','line-through')
+    }
+    complete(){
+        cy.get('.completed > .view > .toggle').click()
+        cy.get(':nth-child(3) > a').click() 
+    }
+    overall(){
+        cy.get('.new-todo').should('have.length',1)
+    }
 }
