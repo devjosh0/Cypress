@@ -24,6 +24,7 @@ it('should able to clear',()=>{
 /// Note:
 //To group test cases use the it functions it()
 // Put all the groups test in the describe function dsecribe()
+//it.only(), it.skip(), beforeeach()
 // To run only a specific test case use the it.only()
 //beforeEach(()=>{}) function runs before the test cases
 //beforeEach(()=>{}) function can only executed in the describe function describe('',()={})
