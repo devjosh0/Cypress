@@ -29,3 +29,4 @@ it('should able to clear',()=>{
 //beforeEach(()=>{}) function runs before the test cases
 //beforeEach(()=>{}) function can only executed in the describe function describe('',()={})
 //You can run Cypress in the terminal by typing (npx cypress run)
+//To run a specific file in the terminal (npx cypress run --spec .\cypress\e2e\filename.cy.js)
