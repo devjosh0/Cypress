@@ -5,6 +5,7 @@
     }
     type(value){
         cy.get('.new-todo').type(value + "{Enter}")
+        
     }
     len(){
         cy.get('.new-todo').should('have.length',1)
@@ -32,5 +33,8 @@
     }
     overall(){
         cy.get('.new-todo').should('have.length',1)
+    }
+    utility(){
+        cy.get('.active > a').click()
     }
 }

@@ -1,0 +1,419 @@
+{
+  "stats": {
+    "suites": 6,
+    "tests": 9,
+    "passes": 8,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-12-09T08:29:23.593Z",
+    "end": "2022-12-09T08:30:22.249Z",
+    "duration": 20970,
+    "testsRegistered": 9,
+    "passPercent": 88.88888888888889,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "45e814f0-88b0-4f63-8d69-ab66dae0e86a",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Assertion.cy.js",
+      "file": "cypress\\e2e\\Assertion.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Assertions Demo",
+          "fullTitle": "Assertions Demo",
+          "timedOut": null,
+          "duration": 3593,
+          "state": "passed",
+          "speed": "fast",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "cy.visit(\"https://example.cypress.io\");\ncy.contains('get').click();\ncy.get('#query-btn') // Implicit Assertions ( shoul , and )\n.should('contain', 'Button').and('have.class', 'query-btn').and('be.enabled').and('have.id', 'query-btn').and('be.enabled').and('be.visible').and('exist').and('have.css', 'color'); //Explicit assertions (expect, assert)\nexpect('query-btn').to.be.string('query-btn');\nexpect('query-btn').to.be.exist;\nassert.strictEqual('get', \"get\", \"not equal\");",
+          "err": {},
+          "uuid": "93c2b90a-c961-4941-ab69-fc2bc0658f5a",
+          "parentUUID": "45e814f0-88b0-4f63-8d69-ab66dae0e86a",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "93c2b90a-c961-4941-ab69-fc2bc0658f5a"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 3593,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "48cdce15-7f91-4422-9178-e69699abdf0d",
+      "title": "",
+      "fullFile": "cypress\\e2e\\file-upload-and-download.cy.js",
+      "file": "cypress\\e2e\\file-upload-and-download.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "file upload",
+          "fullTitle": "file upload",
+          "timedOut": null,
+          "duration": 607,
+          "state": "passed",
+          "speed": "fast",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "cy.visit('https://trytestingthis.netlify.app/');\ncy.get('#myfile').attachFile('crocus-1279508__340.webp');",
+          "err": {},
+          "uuid": "3b08e19d-c37d-4c31-ad36-8b70ab01135d",
+          "parentUUID": "48cdce15-7f91-4422-9178-e69699abdf0d",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "file download",
+          "fullTitle": "file download",
+          "timedOut": null,
+          "duration": 883,
+          "state": "passed",
+          "speed": "fast",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "cy.downloadFile('https://upload.wikimedia.org/wikipedia/en/a/a9/Example.jpg', 'mydownloads', 'example.jpg');",
+          "err": {},
+          "uuid": "d440ea47-e991-4998-b566-efcb8e25f720",
+          "parentUUID": "48cdce15-7f91-4422-9178-e69699abdf0d",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "3b08e19d-c37d-4c31-ad36-8b70ab01135d",
+        "d440ea47-e991-4998-b566-efcb8e25f720"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 1490,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "9ab0ada2-4bc4-4003-a469-fbf5e30021cb",
+      "title": "",
+      "fullFile": "cypress\\e2e\\filtering.cy.js",
+      "file": "cypress\\e2e\\filtering.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c7dd76fa-45b5-4f44-ad98-8cae781ec2ea",
+          "title": "my first",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "second strik",
+              "fullTitle": "my first second strik",
+              "timedOut": null,
+              "duration": 2387,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(':nth-child(2) > .view > .toggle').click();\ncy.get(':nth-child(2) > a').click();\ncy.get('.view > label').should('have.length', 2);",
+              "err": {},
+              "uuid": "a6145362-f32b-4917-8ea3-00b84e5ef9fc",
+              "parentUUID": "c7dd76fa-45b5-4f44-ad98-8cae781ec2ea",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "all lenght",
+              "fullTitle": "my first all lenght",
+              "timedOut": null,
+              "duration": 1795,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.view > label').should('have.length', 3);",
+              "err": {},
+              "uuid": "1f157b9c-fab1-431f-809f-62fa205529ff",
+              "parentUUID": "c7dd76fa-45b5-4f44-ad98-8cae781ec2ea",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a6145362-f32b-4917-8ea3-00b84e5ef9fc",
+            "1f157b9c-fab1-431f-809f-62fa205529ff"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4182,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "3845d75a-e3fc-47a4-bfd8-6d8585493cd0",
+      "title": "",
+      "fullFile": "cypress\\e2e\\page-Object-test.cy.js",
+      "file": "cypress\\e2e\\page-Object-test.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7d7431cc-2c5e-4498-8ff1-22f8ca17a540",
+          "title": "object",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "login",
+              "fullTitle": "object login",
+              "timedOut": null,
+              "duration": 7170,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const log = new _pageObjectCy.default();\nlog.visit();\nlog.type(\"object\");\nlog.type('object1');\nlog.len();\nlog.toggle();\nlog.explict1();\nlog.checked();\nlog.line_through();\nlog.complete();\nlog.overall();\nlog.utility();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.active > a`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.active > a`, but never found it.\n    at todo.utility (webpack:///./cypress/e2e/pageObject.cy.js:38:11)\n    at Context.eval (webpack:///./cypress/e2e/page-Object-test.cy.js:16:7)",
+                "diff": null
+              },
+              "uuid": "39f51b09-eaf3-446c-9b4b-b5a174141957",
+              "parentUUID": "7d7431cc-2c5e-4498-8ff1-22f8ca17a540",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "39f51b09-eaf3-446c-9b4b-b5a174141957"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 7170,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "a8f323e5-e6e6-4da1-ad34-c2ffc3700a17",
+      "title": "",
+      "fullFile": "cypress\\e2e\\spec.cy.js",
+      "file": "cypress\\e2e\\spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "915e765c-812e-4d3c-8178-f615f06b9b7a",
+          "title": "empty spec",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "passes",
+              "fullTitle": "empty spec passes",
+              "timedOut": null,
+              "duration": 2903,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://example.cypress.io');",
+              "err": {},
+              "uuid": "cf91b085-556b-4fed-9627-ceedaa2d305e",
+              "parentUUID": "915e765c-812e-4d3c-8178-f615f06b9b7a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "cf91b085-556b-4fed-9627-ceedaa2d305e"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2903,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "15952f5d-e2cb-40f2-a89e-5834e980480c",
+      "title": "",
+      "fullFile": "cypress\\e2e\\todo.cy.js",
+      "file": "cypress\\e2e\\todo.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "abbb2bb7-0f4c-4cb6-a4d4-f0783629c643",
+          "title": "todo actions",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "invoke",
+              "fullTitle": "todo actions invoke",
+              "timedOut": null,
+              "duration": 1526,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"http://todomvc-app-for-testing.surge.sh/\");\ncy.get('.new-todo').type('my1 test run{Enter}');",
+              "err": {},
+              "uuid": "02ab6354-942d-468b-8d75-5c26cbeac895",
+              "parentUUID": "abbb2bb7-0f4c-4cb6-a4d4-f0783629c643",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "new",
+              "fullTitle": "todo actions new",
+              "timedOut": null,
+              "duration": 106,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.destroy').invoke('show').click();",
+              "err": {},
+              "uuid": "510be0b2-e6c5-4491-8692-a9ccb7bbfb89",
+              "parentUUID": "abbb2bb7-0f4c-4cb6-a4d4-f0783629c643",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "02ab6354-942d-468b-8d75-5c26cbeac895",
+            "510be0b2-e6c5-4491-8692-a9ccb7bbfb89"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1632,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cpyress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

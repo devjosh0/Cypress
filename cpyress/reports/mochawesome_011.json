@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-12-09T09:05:15.430Z",
+    "end": "2022-12-09T09:05:23.394Z",
+    "duration": 7964,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "48f67b2b-9b60-48ed-93e4-1c52848fd8b9",
+      "title": "",
+      "fullFile": "cypress\\e2e\\file-upload-and-download.cy.js",
+      "file": "cypress\\e2e\\file-upload-and-download.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "file upload",
+          "fullTitle": "file upload",
+          "timedOut": null,
+          "duration": 877,
+          "state": "passed",
+          "speed": "fast",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "cy.visit('https://trytestingthis.netlify.app/');\ncy.get('#myfile').attachFile('crocus-1279508__340.webp');",
+          "err": {},
+          "uuid": "998b5b64-d130-4087-9ce4-3347d31c8bb1",
+          "parentUUID": "48f67b2b-9b60-48ed-93e4-1c52848fd8b9",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "file download",
+          "fullTitle": "file download",
+          "timedOut": null,
+          "duration": 2627,
+          "state": "passed",
+          "speed": "fast",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "cy.downloadFile('https://upload.wikimedia.org/wikipedia/en/a/a9/Example.jpg', 'mydownloads', 'example.jpg');",
+          "err": {},
+          "uuid": "eff2274c-9fcd-489c-ac3d-540fb83a4509",
+          "parentUUID": "48f67b2b-9b60-48ed-93e4-1c52848fd8b9",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "998b5b64-d130-4087-9ce4-3347d31c8bb1",
+        "eff2274c-9fcd-489c-ac3d-540fb83a4509"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 3504,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cpyress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

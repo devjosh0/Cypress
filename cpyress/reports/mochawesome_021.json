@@ -1,0 +1,125 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-12-09T09:07:40.181Z",
+    "end": "2022-12-09T09:07:45.869Z",
+    "duration": 5688,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "79b0bc7b-8bdd-4eba-8a19-ef37150a8d4e",
+      "title": "",
+      "fullFile": "cypress\\e2e\\filtering.cy.js",
+      "file": "cypress\\e2e\\filtering.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0b77d80b-d5b6-48c1-bdc9-3dadb535e5df",
+          "title": "my first",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "second strik",
+              "fullTitle": "my first second strik",
+              "timedOut": null,
+              "duration": 2166,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(':nth-child(2) > .view > .toggle').click();\ncy.get(':nth-child(2) > a').click();\ncy.get('.view > label').should('have.length', 2);",
+              "err": {},
+              "uuid": "4d933c55-0eaa-46ea-b791-fc2f1bf23cce",
+              "parentUUID": "0b77d80b-d5b6-48c1-bdc9-3dadb535e5df",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "all lenght",
+              "fullTitle": "my first all lenght",
+              "timedOut": null,
+              "duration": 1698,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.view > label').should('have.length', 3);",
+              "err": {},
+              "uuid": "8d57fe94-f502-4ef5-acb5-1e9c0b256959",
+              "parentUUID": "0b77d80b-d5b6-48c1-bdc9-3dadb535e5df",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "4d933c55-0eaa-46ea-b791-fc2f1bf23cce",
+            "8d57fe94-f502-4ef5-acb5-1e9c0b256959"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3864,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cpyress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

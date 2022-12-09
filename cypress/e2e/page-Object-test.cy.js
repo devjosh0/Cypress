@@ -13,6 +13,7 @@ it('login',()=>{
     log.line_through()
    log.complete()
    log.overall()
+   log.utility()
 }) 
 /*it("login",()=>{
     const log = new todo()

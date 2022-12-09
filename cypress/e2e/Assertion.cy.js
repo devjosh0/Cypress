@@ -19,7 +19,7 @@ it("Assertions Demo",()=>{
 expect('query-btn').to.be.string('query-btn')
 expect('query-btn').to.be.exist
 
-assert.equal('get','get','check well')
+assert.strictEqual('get',"get","not equal")
 
          
 })

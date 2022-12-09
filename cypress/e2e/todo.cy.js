@@ -1,9 +1,15 @@
 /// <reference types="Cypress"/>
 describe('todo actions',()=>{
-    beforeEach(()=>{
+it("invoke",()=>{
         cy.visit("http://todomvc-app-for-testing.surge.sh/")
         cy.get('.new-todo').type('my1 test run{Enter}')
+        
     })
+    it("new",()=>{
+        cy.get('.destroy').inoke('show').click()
+    })
+})// I commented line 9-27, just to see my invoke object on line 6
+    /*
 it.only('shoul able to add a new todo',()=>{
     cy.visit("http://todomvc-app-for-testing.surge.sh/")
     cy.get('.new-todo').type('my test run{Enter}')
@@ -13,14 +19,15 @@ it.only('shoul able to add a new todo',()=>{
 
     
 })
-it.only('should able to toogle',()=>{
+it('should able to toogle',()=>{
     cy.get('.toggle').click()
     cy.get('label').should('have.css','text-decoration-line','line-through')
+    cy.get('.destroy').invoke(".destroy")
 })
 it('should able to clear',()=>{
     cy.get('.clear-completed').click()
 })
-})
+})*/
 /// Note:
 //To group test cases use the it functions it()
 // Put all the groups test in the describe function dsecribe()
