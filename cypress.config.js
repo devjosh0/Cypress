@@ -8,7 +8,7 @@ module.exports = defineConfig({
     charts:true,
     overwrite:false,
     html:false,
-    json:true,
+    JSON:true,
     reportDir:"cpyress/reports"
   },
     setupNodeEvents(on, config) {

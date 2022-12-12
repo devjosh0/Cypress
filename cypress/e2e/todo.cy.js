@@ -6,7 +6,7 @@ it("invoke",()=>{
         
     })
     it("new",()=>{
-        cy.get('.destroy').inoke('show').click()
+        cy.get('.destroy').invoke('show').click()
     })
 })// I commented line 9-27, just to see my invoke object on line 6
     /*
